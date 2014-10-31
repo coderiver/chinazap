@@ -1,0 +1,475 @@
+.header
+	width: 100%
+.top
+	width: 100%
+	border-bottom: 1px solid $solid
+	.inner
+		position: relative
+		padding: 14px 0 8px
+	&__city
+		padding-left: 20px
+		display: inline-block
+		span, a
+			+fs(15)
+			+reg
+			color: $text
+		a
+			margin-left: 2px
+			position: relative
+			padding-right: 28px
+			&:hover
+				span
+					border-bottom: none
+			span
+				border-bottom: 1px dotted $red
+				color: $red
+			i
+				color: #9e9e9e
+				+as
+				position: absolute
+				right: 0
+				top: 1px
+	&__menu
+		display: inline-block
+		margin-left: 37px
+		+fs(0)
+		li
+			display: inline-block
+			margin: 0 12px 
+			a
+				+fs(15)
+				color: #7a7a7a
+				+reg
+				&:hover
+					text-decoration: underline
+	.callback
+		width: 217px
+		padding: 16px 0 0 0
+		position: absolute
+		top: 0
+		right: 0
+		background: $red
+		text-align: center
+		-moz-border-radius: 0 0 20px 20px
+		-webkit-border-radius: 0 0 20px 20px
+		-khtml-border-radius: 0 0 20px 20px
+		border-radius: 0 0 20px 20px
+		behavior: url(border-radius.htc)
+		span, a
+			color: #fff 
+		span
+			+thin
+			display: block
+			margin-bottom: 6px
+			+fs(21)
+			line-height: 18px
+		hr
+			border-top: #97212A 1px solid
+			border-bottom: #C3535B 1px solid
+			width: 100%
+			border-left: none
+			border-right: none
+			margin: 16px 0 0 0
+		a
+			+light
+			+vertical
+			width: 100%
+			display: block
+			padding: 10px 0 16px
+			i, span
+				display: inline-block
+				vertical-align: middle
+			i
+				+s(callback)
+				margin-right: 22px 
+			span
+				text-align: left
+				margin-bottom: 0
+				+fs(17)
+				line-height: 16px
+.contacts
+	padding: 14px 0 
+	border-bottom: 1px solid $solid 
+	+vertical
+	text-align: left
+	background: $row 
+	&__time
+		display: inline-block
+		vertical-align: middle
+		a, span
+			+fs(17)
+			color: $red
+			+light
+			display: block
+			line-height: 1.2
+		a
+			margin-bottom: 10px
+			span
+				border-bottom: 1px dashed $red
+				line-height: 1
+				&:hover
+					border-bottom: none
+.logo
+	margin-right: 35px
+	margin-left: 5px
+	display: inline-block
+	vertical-align: middle
+	+clr
+	img
+		float: left
+.action
+	+clr
+	display: inline-block
+	+box-shadow(0 1px 0 rgba(0, 0, 0, 0.21), inset 0 1px 0 rgba(255, 255, 255, 0.97))
+	-moz-border-radius: 36px
+	-webkit-border-radius: 36px
+	-khtml-border-radius: 36px
+	border-radius: 36px
+	behavior: url(border-radius.htc)
+	display: inline-block
+	vertical-align: middle
+	margin-right: 50px
+	a
+		color: #fefefe
+		+light
+		+vertical
+		background: $red
+		display: block
+		float: left
+		height: 73px
+		position: relative
+		i, span
+			display: inline-block
+			vertical-align: middle
+		span
+			+fs(17)
+			line-height: 16px
+			text-align: left
+		&:hover
+			background: lighten($red, 3%) 
+		&:active
+			top: 1px
+			background: darken($red, 3%)
+		&.request
+			border-right: 1px solid #97212a
+			padding-left: 30px 
+			padding-right: 24px
+			-moz-border-radius: 36px 0 0 36px
+			-webkit-border-radius: 36px 0 0 36px
+			-khtml-border-radius: 36px 0 0 36px
+			border-radius: 36px 0 0 36px
+			behavior: url(border-radius.htc)
+			i
+				+s(mail)
+				margin-right: 20px
+		&.download
+			border-left: 1px solid #c3535b 
+			padding-right: 44px
+			padding-left: 30px
+			-moz-border-radius: 0 36px 36px 0
+			-webkit-border-radius: 0 36px 36px 0
+			-khtml-border-radius: 0 36px 36px 0
+			border-radius: 0 36px 36px 0
+			behavior: url(border-radius.htc)
+			i
+				+s(download)
+				margin-right: 15px
+.header__menu
+	+vertical
+	text-align: left
+	padding: 0 0 1px 0
+	+clr
+	.btn-cart
+		vertical-align: middle
+		float: right
+		margin-top: 11px
+.nav
+	display: inline-block
+	vertical-align: middle
+	padding: 0 0 0 6px 
+	+fs(0)
+	li
+		display: inline-block
+		position: relative
+		a
+			+fs(18)
+			+light
+			color: #181818
+			line-height: 1.4
+			&:hover
+				text-decoration: underline
+			&.is-active
+				color: $red 
+			i
+				+as
+				+fs(16)
+				margin-left: 4px
+	&__item
+		padding: 22px 13px 21px
+		display: block
+		+tr(box-shadow 0.3s)
+		&.is-open
+			+box-shadow(0 2px 5px rgba(0, 0, 0, 0.32))
+	&__submenu, &__submenu-level2
+		position: absolute
+		background: #fff
+		z-index: 2 
+		+box-shadow(0 2px 5px rgba(0, 0, 0, 0.32))
+		visibility: hidden
+		opacity: 0
+		will-change: opacity
+		+tr(opacity 0.5s)
+		&.is-open
+			visibility: visible
+			opacity: 1
+		li
+			display: block 
+			padding: 0 3px 0 4px
+			&.is-active, &:hover
+				background: $row 
+			a
+				border-top: 1px dotted $date
+				height: 36px
+				+vertical
+				display: block
+				text-align: left
+				padding: 0 10px 
+				color: $grey-text
+				position: relative
+				span, i
+					display: inline-block
+					vertical-align: middle
+				span
+					+fs(15)
+					+reg 
+				i
+					+as
+					position: absolute
+					top: 10px
+					right: 15px
+				&:hover, &.is-active
+					color: $red 
+			&:first-child
+				a
+					border-top: none
+	&__submenu
+		top: 100%
+		left: 0
+		right: 0
+		border-top: 2px solid $red 
+	&__submenu-level2
+		top: 0
+		right: -100%
+		width: 100%
+.office
+	+vertical
+	vertical-align: middle
+	display: inline-block
+	margin-left: 15px
+	&:hover
+		span
+			text-decoration: underline
+	i, span
+		display: inline-block
+		vertical-align: middle
+	i
+		+s(office)
+		display: inline-block
+		margin-right: 6px 
+	span
+		+fs(18)
+		+light
+		color: $red
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

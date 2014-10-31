@@ -1,88 +1,1239 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.out
+	position: relative
+.main
+	width: 100%
+.container
+	width: 1200px
+	margin: 0 auto
+	+clr
+.content
+	float: left
+	width: 960px
+	margin: 0 0 0 21px 
+	padding: 15px 0 0 0
+	border-top: 1px dotted $date
+	&__box
+		padding: 0 23px 0 17px
+		border-bottom: 1px dotted $date
+		margin-bottom: 20px
+		&_mod
+			border-bottom: none
+			margin-bottom: 0
+	.head
+		display: inline-block
+		h1, .heading
+			display: inline-block
+			border-bottom: 2px solid $red
+			margin-bottom: 3px
+		.small
+			display: block
+		.date
+			display: block
+			float: right
+			padding-top: 5px
+			padding-right: 23px
+			+fs(15)
+	.head_mod
+		display: block
+		padding: 0 0 25px 16px
+		h1, .heading
+			min-width: 290px
+			margin-bottom: 0
+	.head_long
+		h1, .heading
+			width: 100%
+.search
+	display: block
+	float: right
+	padding-top: 12px
+	form
+		+vertical
+	&__keyword
+		width: 286px
+		border: 1px solid #bcbcbc
+		-moz-border-radius: 23px
+		-webkit-border-radius: 23px
+		-khtml-border-radius: 23px
+		border-radius: 23px
+		behavior: url(border-radius.htc)
+		padding: 12px 25px 11px
+		+fs(17)
+		line-height: 1
+		color: $text
+		+thin 
+		+placeholder-color(#898989)
+		display: inline-block
+		vertical-align: middle
+	&__submit
+		+s(search)
+		margin-left: 12px
+		display: inline-block
+		vertical-align: middle
+.brands
+	+vertical
+	padding: 35px 0 25px 0
+	div
+		display: inline-block
+		vertical-align: middle
+		width: 24.9% 
+		a
+			display: inline-block
+.spares
+	text-align: center
+	ul
+		+fs(0)
+		padding-top: 40px
+		li
+			display: inline-block
+			width: 19%
+			padding-bottom: 30px
+			vertical-align: top
+			a
+				color: $grey 
+				+reg
+				+fs(17)
+				letter-spacing: 0.7px
+				display: inline-block
+				&:hover
+					.spares__title
+						text-decoration: underline
+	&__img
+		width: 100%
+		display: block
+		height: 125px
+		+vertical
+		margin-bottom: 15px
+		i
+			max-height: 125px
+			display: inline-block
+			vertical-align: middle
+	&__battery
+		i
+			+s(battery)
+	&__transmission
+		i
+			+s(transmission)
+	&__tools
+		i
+			+s(tools)
+	&__disc
+		i
+			+s(disc)
+	&__suspension
+		i
+			+s(suspension)
+	&__silencer
+		i
+			+s(silencer)
+	&__candle
+		i
+			+s(candle)
+	&__motor
+		i
+			+s(motor)
+	&__oils
+		i
+			+s(oils)
+	&__brake
+		i
+			+s(brake)
+.news-wrapper
+	padding: 0 30px 0 20px
+	text-align: justify
+	+fs(0.1)
+	word-spacing: 0px
+	&:after
+		content: ""
+		width: 100%
+		display: inline-block 
+.news
+	display: inline-block
+	vertical-align: top
+	width: 425px
+	text-align: left
+	h2
+		margin-bottom: 15px
+	&__img
+		a
+			+clr
+			display: inline-block
+			img
+				float: left
+	&__title
+		border-top: 1px dotted $date
+		padding-top: 10px
+		padding-bottom: 10px 
+		&.is-first
+			border-top: none
+		a
+			+fs(22)
+			+light
+			color: $red
+			line-height: 1.3
+			&:hover
+				border-bottom: 1px solid $red 
+		p
+			padding: 8px 0 10px
+			line-height: 1.2
+	.date
+		margin-bottom: 6px
+		display: block
+		text-align: right
+.more
+	border-top: 2px solid $date
+	text-align: center
+	padding: 18px 0 0 0
+	a
+		color: #929292
+		+fs(17)
+		line-height: 16px
+		span
+			padding-bottom: 11px
+			display: inline-block
+		i
+			display: inline-block
+			+s(arr-bot)
+
+.footer
+	width: 100%
+	margin: 45px auto 0
+	border-top: 1px solid #dddddd 
+	background: $row 
+	&__top, &__bottom, &__row
+		width: 1162px
+		margin: 0 auto
+	&__top
+		padding: 35px 20px 35px 18px
+		border-bottom: 1px dotted $date 
+	&__bottom
+		padding: 0 20px 0 18px  
+	p
+		+light
+		+fs(15)
+		color: #717171 
+		line-height: 1.2
+		margin-bottom: 7px
+	.heading
+		margin-bottom: 15px
+		display: block
+	&__row
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		padding: 0 20px 10px 18px 
+		border-bottom: 1px dotted $date 
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__nav
+		display: inline-block
+		vertical-align: top
+		padding: 35px 0 0 0 
+		+fs(0)
+		li
+			display: inline-block
+			vertical-align: top
+			padding-right: 26px
+			a
+				+fs(16)
+				+light
+				letter-spacing: 0.3px
+				color: #181818
+				&.is-active
+					color: $red
+				&:hover
+					text-decoration: underline 
+	&__box
+		display: inline-block
+		vertical-align: top
+		padding: 10px 0 0 0 
+		span
+			display: block
+			+fs(17)
+			+light
+			color: #181818
+			line-height: 1.2
+	&__title
+		margin-bottom: 10px
+	.copyright
+		padding: 15px 0 
+		p
+			+fs(13)
+			color: #828282
+			+reg 
+
+
+//NEWS 
+
+.way
+	+fs(0)
+	li
+		display: inline-block
+		&:after
+			content: "\f105"
+			+as
+			+fs(17)
+			color: $text
+			margin: 0 6px 0 7px 
+		&.is-active
+			&:after
+				display: none
+	a
+		+light
+		+fs(17)
+		color: $red 
+		&:hover
+			text-decoration: underline
+		&.is-active
+			color: $text 
+.news__col
+	display: inline-block
+	vertical-align: top
+	width: 440px
+	text-align: left
+.news_mod
+	margin-bottom: 25px
+	border-bottom: 1px dotted $date
+	width: 410px
+	&.is-last
+		border-bottom: none
+	.news__title
+		padding-bottom: 15px 
+		padding-top: 5px
+		border: none
+		a
+			margin-bottom: 5px
+		p
+			padding: 5px 0 5px  
+		.date
+			margin-bottom: 0
+
+.row
+	padding: 11px 23px 11px 16px 
+	margin-top: 10px
+	margin-bottom: 20px
+	border-top: 1px solid $date
+	+vertical
+	text-align: left
+	&__left, &__right
+		+vertical
+		display: inline-block
+		vertical-align: middle
+		width: 49.8%
+	&__left
+		text-align: left
+	&__right
+		text-align: right
+	&__title
+		+reg
+		+fs(16)
+		line-height: 1.2
+		display: inline-block
+		vertical-align: middle
+		color: #7d7d7d 
+		margin-right: 20px
+	&__list
+		display: inline-block
+		vertical-align: middle
+		+fs(0)
+		li
+			display: inline-block
+			margin: 0 8px 
+			a
+				line-height: 1.2
+				+reg
+				color: $text
+				+vertical
+				width: 34px
+				height: 34px
+				display: block
+				-moz-border-radius: 50%
+				-webkit-border-radius: 50%
+				-khtml-border-radius: 50%
+				border-radius: 50%
+				behavior: url(border-radius.htc)
+				span
+					display: inline-block
+					vertical-align: middle
+					+fs(16)
+					padding: 0 2px 2px 0 
+				&:hover
+					span
+						color: $red 
+				&.is-active
+					background: $red
+					color: #fff  
+					&:hover
+						background: lighten($red, 5%)
+						span
+							color: #fff 
+					&:active
+						text-decoration: none
+						background: darken($red, 5%) 
+	&__last
+		display: inline-block
+		vertical-align: middle
+		margin: 0 8px 
+		&:hover
+			span
+				color: $red 
+	&__next
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		margin-left: 45px 
+		margin-right: 10px
+		i, span
+			display: inline-block
+			vertical-align: middle
+		i
+			+s(next)
+			margin-right: 23px 
+		span
+			+fs(16)
+			+reg
+			color: $red
+			margin-bottom: 4px 
+		&:hover
+			span
+				text-decoration: underline
+
+//NEWS ITEM
+.text
+	padding: 0 22px 15px 16px
+	img
+		margin-bottom: 20px
+	p
+		margin-bottom: 20px
+	p, li
+		+fs(17)
+		+light
+		color: $text
+		line-height: 1.2
+		span
+			+med
+			font-weight: normal
+	div
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		margin-bottom: 10px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+		a
+			+clr
+			display: inline-block
+			vertical-align: top
+			img
+				float: left
+	h2
+		margin-bottom: 20px
+	h3
+		margin-bottom: 15px
+	hr
+		margin: 0 0 20px 
+		width: 100% 
+		padding: 3px 22px 0 16px
+		margin-left: -16px
+		border: none
+		border-bottom: 1px dotted $date 
+	ul
+		padding: 0 7px
+		margin-bottom: 15px
+		+clr
+		li
+			padding: 0 24px
+			position: relative
+			margin-bottom: 10px
+			&:before
+				content: ""
+				position: absolute
+				width: 8px
+				height: 8px
+				top: 4px
+				left: 0
+				border: 1px solid #afafaf
+				-moz-border-radius: 50%
+				-webkit-border-radius: 50%
+				-khtml-border-radius: 50%
+				border-radius: 50%
+				behavior: url(border-radius.htc)
+	table
+		margin-bottom: 20px
+		tr
+			background: #fff
+			&.is-bg
+				background: $row
+			th, td
+				line-height: 1.2
+			th
+				text-align: center
+				background: $grey
+				color: #fff
+				padding: 19px 20px 18px 20px
+				+fs(19)
+				+med
+				font-weight: normal
+				&.is-first
+					text-align: left
+			td
+				width: 70px 
+				padding: 11px 20px 10px 35px
+				+fs(15)
+				+light
+				color: $text 
+				border-bottom: 1px dotted $date
+				border-left: 1px dotted $date
+				&.is-first
+					width: 470px
+					padding: 11px 35px 10px 20px 
+					border-left: none
+
+
+//ITEM
+.items
+	width: 100%
+	padding: 5px 0 45px 16px
+	+clr
+	&__left
+		float: left
+		width: 460px
+		p
+			+reg
+			+fs(14)
+			padding: 0 0 10px 20px
+			max-width: 400px
+	&__top
+		+vertical
+		background: #636363
+		padding: 13px 25px 12px 25px
+		text-align: left
+		.price
+			display: inline-block
+			vertical-align: middle
+			+reg
+			+fs(16)
+			color: #fff 
+			margin-right: 55px
+			span
+				+med
+		.btn-red
+			display: inline-block
+			vertical-align: middle
+	&__select
+		width: 98px
+		display: inline-block
+		vertical-align: middle 
+		margin-right: 20px
+	&__list
+		width: 440px
+		padding: 20px 0 25px 0 
+		li
+			border-top: 1px dotted #d7d7d7 
+			padding: 4px 0 4px 20px
+			+clr 
+			+fs(16)
+			+reg
+			&.is-first
+				border-top: none
+			span
+				float: left
+				width: 50%
+				display: block
+	&__col_mod
+		+med
+//similar block
+.similar
+	display: block
+	text-align: left
+	padding: 0 0 0 16px
+	+fs(0.1) 
+	h2
+		margin-bottom: 15px
+	hr
+		width: 100%
+		border: none
+		border-bottom: 1px solid $date
+		margin-bottom: 15px
+	&_mod
+		margin-bottom: 50px
+	&__item
+		width: 24.9%
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		padding: 10px 0 10px 
+		position: relative
+		&_mod
+			&:after
+				content: "" 
+				width: 213px
+				margin: 18px auto 0
+				display: block
+				border-bottom: 1px dotted $date 
+		.name
+			+fs(19)
+			+med
+			color: $red
+			&:hover
+				text-decoration: underline
+		.comp
+			+fs(14)
+			+reg
+			color: #707070
+			display: block
+			margin-bottom: 10px
+		p
+			+fs(14)
+			color: $text
+			max-width: 170px
+			margin: 0 auto
+			margin-bottom: 10px
+			+reg
+		.price
+			+fs(17)
+			color: $text
+			+reg
+			margin-right: 8px
+	&__img
+		width: 100%
+		height: 125px
+		+vertical
+		margin-bottom: 10px
+		img
+			display: inline-block
+			vertical-align: top
+	&__bot
+		width: 100%		 
+		+vertical
+		span, a
+			display: inline-block
+			vertical-align: middle
+
+//form
+.form
+	padding: 10px 0 0 16px
+	&__row
+		width: 100%
+		border-bottom: 1px dotted $date 
+		text-align: center
+		padding-bottom: 35px
+		.form__check
+			margin: 0 80px 0 16px
+	&__check
+		display: inline-block
+		text-align: left
+	&__box
+		padding: 25px 20px 0 0
+		+clr
+		margin-bottom: 15px
+	&__left
+		width: 394px
+		float: left
+		.form__check
+			display: block
+			margin: 0 25px 10px
+	&__right
+		width: 528px
+		float: left
+	&__title
+		+fs(20)
+		color: $text
+		line-height: 1.2
+		+reg
+		display: block 
+		padding: 0 10px 0 
+		text-align: left
+		margin-bottom: 8px
+	&__col
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		margin-bottom: 10px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__bottom
+		+vertical
+		background: #636363 
+		padding: 13px 23px 12px 19px
+		text-align: left
+		+clr
+		.checkbox
+			display: inline-block
+			margin-top: 6px
+		.btn-red
+			float: right
+			span
+				+fs(16)
+				padding-bottom: 2px
+label
+	display: inline-block
+	vertical-align: top		
+.label_middle
+	width: 257px
+	.input
+		width: 219px 
+.label_long
+	width: 347px
+	.input
+		width: 309px
+.label_small
+	width: 167px
+	.input
+		width: 129px 
+.label_area
+	width: 526px
+	.input
+		width: 490px
+		height: 100px
+		resize: none
+
+
+//cart
+.cart
+	padding: 10px 0 0 16px 
+	&_mod
+		padding-bottom: 15px
+	&__item
+		padding: 0 0 0
+		height: 59px 
+		+vertical
+		text-align: left
+		border-bottom: 1px dotted $date
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+		&.is-first
+			border-top: 1px dotted $date
+	&__select
+		width: 100px
+		.select
+			.select__text, .select__list, i
+				color: $text
+	&__left
+		+vertical
+		text-align: left
+		display: inline-block
+		vertical-align: middle
+		width: 410px
+		height: 59px
+		float: left
+		.img, p
+			display: inline-block
+			vertical-align: middle
+		.img
+			padding: 0 27px 0 25px
+			img
+				max-width: 100%
+				max-height: 44px
+		p
+			margin: 0
+			span
+				display: block
+				color: #707070
+				+fs(14) 
+				+reg
+			a
+				+fs(19)
+				+med
+				color: $red 
+	&__right
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		text-align: right
+		width: 500px
+	&__label
+		+fs(16)
+		color: $text
+		+reg
+		display: inline-block
+		vertical-align: middle
+		span
+			+med
+	form
+		border-right: 1px dotted $date
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		text-align: left
+		width: 233px
+		height: 36px
+		padding: 11px 17px 12px 0
+		span, div
+			display: inline-block
+			vertical-align: middle
+		.cart__select
+			float: right
+	.price
+		display: inline-block
+		vertical-align: middle
+		color: $text 
+		+med
+		+fs(15)
+	.delete
+		display: inline-block
+		vertical-align: middle
+		width: 66px
+		text-align: center
+		.btn-delete
+			display: inline-block
+			+s(close)
+	&__amount
+		display: inline-block
+		+vertical
+		padding: 11px 20px 12px 
+		height: 36px
+		border-right: 1px dotted $date
+	&_mod
+		.cart__left
+			width: 285px
+		.cart__center
+			width: 400px
+			+reg
+			+fs(13)
+			color: $text
+			display: inline-block 
+			vertical-align: middle
+			margin-bottom: 0
+		.cart__right
+			width: 220px
+			a
+				display: inline-block
+				vertical-align: middle
+			.char__label
+				margin-right: 7px
+	&__bottom
+		padding: 13px 23px 12px 30px
+		margin-top: 40px
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		background: #636363 
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block  
+		p
+			display: inline-block
+			vertical-align: middle
+			+reg
+			+fs(16)
+			color: #fff 
+			span
+				+med
+		.btn-red
+			span
+				padding-bottom: 2px
+				+fs(16)
+
+//alphabet
+.alphabet
+	padding: 0 15px
+	background: #636363
+	+fs(0)
+	+vertical
+	text-align: left
+	height: 59px
+	&__left
+		display: inline-block
+		vertical-align: middle
+	&__list
+		display: inline-block
+		vertical-align: middle
+		+fs(0)
+		li
+			display: inline-block
+			margin: 0 1px 
+			a
+				+vertical
+				display: block
+				width: 48px
+				height: 34px
+				-moz-border-radius: 17px
+				-webkit-border-radius: 17px
+				-khtml-border-radius: 17px
+				border-radius: 17px
+				behavior: url(border-radius.htc)
+				span
+					+fs(16)
+					+reg
+					color: #fff
+					display: inline-block
+					vertical-align: middle
+					padding-bottom: 2px
+				&:hover
+					span
+						text-decoration: underline
+				&.is-active
+					background: $red 
+					&:hover
+						background: lighten($red, 3%) 
+						span
+							text-decoration: none
+					&:active
+						background: darken($red, 3%) 
+	&__dec
+		display: inline-block
+		vertical-align: middle
+		+s(alphabet-dec)
+		margin: 0 7px 
+	&__list_mod
+		display: inline-block
+		vertical-align: middle
+		+fs(0)
+		li
+			display: inline-block
+			a
+				+vertical
+				display: block
+				-moz-border-radius: 17px
+				-webkit-border-radius: 17px
+				-khtml-border-radius: 17px
+				border-radius: 17px
+				behavior: url(border-radius.htc)
+				margin: 0 7px 0 8px
+				span
+					+fs(16)
+					+reg
+					color: #fff
+					display: inline-block
+					vertical-align: middle
+					padding-bottom: 4px
+				&:hover
+					span
+						text-decoration: underline
+				&.is-active
+					background: $red 
+					width: 34px
+					height: 34px
+					margin: 0 
+					span
+						padding-right: 1px
+					&:hover
+						background: lighten($red, 3%) 
+						span
+							text-decoration: none
+					&:active
+						background: darken($red, 3%) 
+
+//sorting
+.sorting
+	padding: 13px 20px 12px 16px
+	text-align: justify
+	+fs(0.1)
+	word-spacing: 0px
+	border-bottom: 2px solid $date
+	&:after
+		content: ""
+		width: 100%
+		display: inline-block  
+	&__left, &__right
+		display: inline-block
+		vertical-align: middle
+		+vertical
+	&__title
+		+fs(16)
+		+reg
+		color: #7d7d7d
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		&_mod
+			color: $text
+	&__list
+		display: inline-block
+		vertical-align: middle
+		li
+			display: inline-block
+			a
+				+vertical
+				display: block
+				width: 48px
+				height: 34px 
+				-moz-border-radius: 17px
+				-webkit-border-radius: 17px
+				-khtml-border-radius: 17px
+				border-radius: 17px
+				behavior: url(border-radius.htc)
+				&:hover
+					span
+						text-decoration: underline
+				span
+					display: inline-block
+					vertical-align: middle
+					+fs(16)
+					color: $text 
+					+reg
+					padding-bottom: 2px
+				&.is-active
+					background: $red
+					span
+						color: #fff
+					&:hover
+						background: lighten($red, 3%) 
+						span
+							text-decoration: none
+					&:active
+						background: darken($red, 3%) 
+	&__price
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		li
+			display: inline-block
+			vertical-align: middle
+	&__price-item
+		i
+			display: none
+		&.is-active
+			+vertical
+			display: inline-block
+			padding: 0 13px 0 16px 
+			height: 34px 
+			-moz-border-radius: 17px
+			-webkit-border-radius: 17px
+			-khtml-border-radius: 17px
+			border-radius: 17px
+			behavior: url(border-radius.htc)
+			background: $red 
+			color: #fff
+			margin-right: 15px
+			span
+				display: inline-block
+				vertical-align: middle
+				+fs(16)
+				+reg
+				padding-bottom: 2px
+			i
+				+as
+				+fs(16)
+				display: inline-block
+				vertical-align: middle
+				margin-left: 8px
+	&__buttons
+		display: inline-block
+		vertical-align: top
+		margin-left: 15px
+		li
+			display: inline-block
+			padding-top: 1px
+			margin: 0 5px 
+			a
+				display: block
+		.btn-table
+			+s(table)
+		.btn-list
+			+s(row)
+
+//item
+.item
+	padding: 10px 25px 15px 40px
+	+vertical
+	text-align: left
+	border-top: 1px dotted $date
+	&.is-first
+		border-top: none
+	&__left
+		+vertical
+		display: inline-block
+		vertical-align: middle
+		text-align: left
+		width: 210px
+	&__img
+		display: inline-block
+		vertical-align: middle
+		margin-right: 27px
+		img
+			max-width: 100%
+			max-height: 44px
+	p
+		display: inline-block
+		vertical-align: middle
+		a
+			+med
+			+fs(19)
+			color: $red 
+		span
+			+reg
+			+fs(14)
+			color: #707070 
+			display: block
+	&__center
+		display: inline-block
+		vertical-align: middle
+		width: 440px
+		+vertical
+		p
+			+fs(14)
+			+reg
+			color: $text 	
+			display: inline-block
+			vertical-align: middle
+			text-align: left	
+	&__right
+		width: 245px
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		text-align: right
+	&__price
+		display: inline-block
+		vertical-align: middle
+		+fs(17)
+		+reg
+		margin-right: 8px
+	.btn-buy
+		display: inline-block
+		vertical-align: middle
+
+//pages
+.pages
+	padding: 11px 30px 11px 15px 
+	text-align: justify
+	+fs(0.1)
+	word-spacing: 0px
+	border-top: 1px solid $date
+	margin-top: 40px
+	&:after
+		content: ""
+		width: 100%
+		display: inline-block 
+	&__left, &__right
+		display: inline-block
+		vertical-align: middle
+		+vertical
+	&__title
+		display: inline-block
+		vertical-align: middle
+		+fs(16)
+		+reg
+		color: #7d7d7d
+		margin-right: 20px
+	&__list
+		display: inline-block
+		vertical-align: middle
+		+fs(0)
+		li
+			display: inline-block
+			margin: 0 4px 
+			a
+				+vertical
+				display: block
+				width: 34px
+				height: 34px
+				-moz-border-radius: 17px
+				-webkit-border-radius: 17px
+				-khtml-border-radius: 17px
+				border-radius: 17px
+				behavior: url(border-radius.htc)
+				color: $text 
+				&:hover
+					color: $red 
+				span
+					+fs(16)
+					display: inline-block
+					vertical-align: middle
+					padding-bottom: 2px
+				&.is-active
+					background: $red 
+					color: #fff 
+					&:hover
+						color: #fff
+						background: lighten($red, 3%) 
+					&:active
+						background: darken($red, 3%) 
+	&__more
+		display: inline-block
+		vertical-align: middle
+		&:hover
+			color: $red 
+	&__next
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		color: $red
+		margin-left: 50px
+		&:hover
+			span
+				text-decoration: underline
+		i
+			+s(next)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 23px
+		span
+			display: inline-block
+			vertical-align: middle
+			+fs(16)
+			+reg
+
+//lists
+.lists
+	padding: 0px 22px 27px 17px 
+	+clr
+	text-align: justify
+	+fs(0.1)
+	word-spacing: 0px
+	&:after
+		content: ""
+		width: 100%
+		display: inline-block 
+.list-wrap
+	height: 255px
+	overflow: auto
+	position: relative
+	&:after
+		content: "" 
+		width: 205px
+		position: absolute
+		bottom: 0
+		left: 0
+		background: #fff
+		height: 10px 
+.list
+	width: 216px
+	display: inline-block 
+	ul
+		width: 200px
+		min-height: 255px
+		padding-bottom: 20px
+		li
+			a
+				display: block
+				padding: 5px 27px 5px 15px 
+				border-bottom: 1px dotted $date 
+				+light
+				position: relative
+				i
+					display: none
+					position: absolute
+					top: 50%
+					right: 20px
+					margin-top: -8px 
+				&:hover
+					color: $red
+					+med
+				&.is-active
+					color: $red 
+					+med
+					i
+						display: block
+	&__heading
+		+fs(23)
+		display: block
+		color: $red
+		+reg
+		padding: 0 13px 0 13px  
 
 
 

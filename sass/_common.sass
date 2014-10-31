@@ -52,24 +52,87 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
+html
+	font-size: 62.5%
+.out
+	min-width: 1200px
+	width: 100%
+	margin: 0 auto
+.inner
+	width: 1200px
+	margin: 0 auto
+//fonts
++font("PFHighwaySansPro Thin", highway-thin)
++font("PFHighwaySansPro Light", highway-light)
++font("PFHighwaySansPro Medium", highway-medium)
++font("PFHighwaySansPro Regular", highway-regular)
++font("Awesome", fontawesome-webfont)
 
+=thin
+	font-family: "PFHighwaySansPro Thin", Arial, sans-serif
+=light
+	font-family: "PFHighwaySansPro Light", Arial, sans-serif
+=med
+	font-family: "PFHighwaySansPro Medium", Arial, sans-serif
+=reg
+	font-family: "PFHighwaySansPro Regular", Arial, sans-serif
+=as
+	font-family: "Awesome", Arial, sans-serif
 
-// common blocks      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//color
+$text: #292929
+$red: #b11f2a
+$row: #f7f7f7
+$solid: #dbdbdb
+$date: #aaaaaa
+$grey-text: #595959
+$grey: #636363
+$text-bot: #717171
+//text
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+h1, .heading
+	+thin
+	+fs(40)
+	color: $text 
+	line-height: 1
+h2
+	+light
+	+fs(30)
+	line-height: 1.2
+	color: $text
+h3
+	+med
+	+fs(19)
+	line-height: 1.2
+	color: $text
+p, a
+	+light
+	line-height: 1.2
+	color: $text
+	+fs(17) 
+	a
+		color: $red 
+		&:hover
+			text-decoration: underline
+.small
+	+light
+	+fs(17)
+	color: $text
+	display: inline-block
+	 
+.sub_heading
+	+light
+	+fs(23)
+	color: $text
+	line-height: 1.2
+.date
+	+fs(18)
+	color: $date
+	line-height: 1.2
+	+thin
 
 
 

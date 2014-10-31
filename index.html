@@ -7,15 +7,333 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/font-awesome.min.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
+
+<div class="overlay"></div>
+<div class="js-map js-popup">
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89573.39978213764!2d10.917601107947458!3d45.44625562421729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f68699be0e3%3A0x53f85a636882595b!2z0JLQtdGA0L7QvdCwLCDQmNGC0LDQu9C40Y8!5e0!3m2!1sru!2sua!4v1414748089047" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+	</div>
+</div>
+<div class="js-feedback js-popup">
+	<span class="js-close">x</span>
+	<div class="feedback">
+		<span class="heading">Обратная связь</span>
+		<form action="">
+			<label for="" class="label_middle">
+				<input type="text" class="input" value="Имя" onfocus="if (this.value=='Имя') this.value='';" onblur="if (this.value==''){this.value='Имя'}">
+			</label>
+			<label for="" class="label_middle">
+				<input type="text" class="input" value="Фамилия" onfocus="if (this.value=='Фамилия') this.value='';" onblur="if (this.value==''){this.value='Фамилия'}">
+			</label>
+			<label for="" class="label_middle">
+				<input type="text" class="input" value="e-mail" onfocus="if (this.value=='e-mail') this.value='';" onblur="if (this.value==''){this.value='e-mail'}">
+			</label>
+			<label for="" class="label_middle">
+				<input type="text" class="input" value="Номер телефона" onfocus="if (this.value=='Номер телефона') this.value='';" onblur="if (this.value==''){this.value='Номер телефона'}">
+			</label>
+			<label for="" class="label_area">
+				<textarea name="" id="" cols="30" rows="10" class="input" value="Комментарии к заказу" onfocus="if (this.value=='Комментарии к заказу') this.value='';" onblur="if (this.value==''){this.value='Комментарии к заказу'}"></textarea>
+			</label>
+			<input type="submit" class="js-submit" value="Отправить">
+		</form>
+	</div>
+</div>
+<div class="js-profile js-popup">
+	<span class="js-close">x</span>
+	<div class="feedback">
+		<span class="heading">Личный Кабинет</span>
+		<form action="">
+			<label for="" class="label_middle">
+				<input type="text" class="input" value="e-mail" onfocus="if (this.value=='e-mail') this.value='';" onblur="if (this.value==''){this.value='e-mail'}">
+			</label>
+			<label for="" class="label_middle">
+				<input type="text" class="input" value="password" onfocus="if (this.value=='password') this.value='';" onblur="if (this.value==''){this.value='password'}">
+			</label>
+			<input type="submit" class="js-submit" value="Войти">
+		</form>
+	</div>
+</div>
 <!-- BEGIN  out-->
 <div class="out">
-
+	<!-- begin header  -->
+	<div class="header">
+		<div class="top">
+			<div class="inner">
+				<div class="top__city">
+					<span>Выберите город:</span>
+					<a href="#"><span>Москва</span><i class="fa fa-angle-down"></i></a>
+				</div>
+				<ul class="top__menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">Скидки на опт</a></li>
+					<li><a href="#">Гарантия и возврат</a></li>
+					<li><a href="#">Доставка и самовывоз</a></li>
+					<li><a href="#">Вакансии</a></li>
+				</ul>
+				<div class="callback">
+					<span>+7 (495) 767-8899</span>
+					<span>+7 (926) 283-1823</span>
+					<hr>
+					<a href="#" class="callback__link"><i></i><span>перезвонить <br> мне</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="contacts">
+			<div class="inner">
+				<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+				<div class="action">
+					<a href="#" class="request"><i></i><span>Отправить заявку <br> на запчасти</span></a>
+					<a href="#" class="download"><i></i><span>Скачать <br> прайс</span></a>
+				</div>
+				<div class="contacts__time">
+					<a href="#"><span>Высоковольтный проезд, д. 11</span></a>
+					<span>Пн. - Пт. 9:00 - 16:00</span>
+					<span>Сб. - Вс. 10:00 - 15:00</span>
+				</div>
+			</div>
+		</div>
+		<div class="inner header__menu">
+			<ul class="nav">
+				<li><a href="#" class="nav__item is-active">Главная</a></li>
+				<li><a href="#" class="nav__item nav__drop">Каталог запчастей<i class="fa fa-angle-down"></i></a>
+					<ul class="nav__submenu">
+						<li><a href="#"><span>Автохимия</span></a></li>
+						<li><a href="#"><span>Автолампы</span></a></li>
+						<li><a href="#" class="nav__drop-level1"><span>Стартеры</span><i class="fa fa-angle-right"></i></a>
+							<ul class="nav__submenu-level2">
+								<li><a href="#"><span>Автохимия</span></a></li>
+								<li><a href="#"><span>Автолампы</span></a></li>
+								<li><a href="#"><span>Стартеры</span></a></li>
+								<li><a href="#"><span>Генераторы</span></a></li>
+								<li><a href="#"><span>Щетки</span></a></li>
+								<li><a href="#"><span>Автомасла</span></a></li>
+								<li><a href="#"><span>Автохимия</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span>Генераторы</span></a></li>
+						<li><a href="#"><span>Щетки</span></a></li>
+						<li><a href="#"><span>Автомасла</span></a></li>
+						<li><a href="#"><span>Автохимия</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="nav__item ">Спецпредложения</a></li>
+				<li><a href="#" class="nav__item ">Новости</a></li>
+				<li><a href="#" class="nav__item ">Оплата и доставка</a></li>
+				<li><a href="#" class="nav__item ">Контакт</a></li>
+			</ul>
+			<a href="#" class="office"><i></i><span>Личный кабинет</span></a>
+			<a href="#" class="btn-cart"><i></i><span>Корзина пуста</span></a>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- begin main  -->
+	<div class="main">
+		<!-- begin container  -->
+		<div class="container">
+			<!-- begin sidebar  -->
+			<div class="sidebar">
+				<div class="sidebar__box">
+					<span class="heading">Каталог</span>
+					<span class="small">по маркам</span>
+					<ul>
+						<li class="is-first"><a href="#">Cherry</a></li>
+						<li><a href="#">Lifan</a></li>
+						<li><a href="#">BYD</a></li>
+						<li><a href="#">Geely</a></li>
+						<li><a href="#">Howo</a></li>
+					</ul>
+				</div>
+				<div class="sidebar__box">
+					<span class="heading">Каталог</span>
+					<span class="small">запчастей</span>
+					<ul>
+						<li class="is-first"><a href="#">Автохимия</a></li>
+						<li><a href="#">Автолампы</a></li>
+						<li><a href="#">Стартеры</a></li>
+						<li><a href="#">Генераторы</a></li>
+						<li><a href="#">Щетки</a></li>
+						<li><a href="#">Автомасла</a></li>
+						<li><a href="#">Автохимия</a></li>
+					</ul>
+				</div>
+				<div class="sidebar__box sidebar__box_bg">
+					<span class="sub_heading">Производители</span>
+					<ul>
+						<li class="is-first"><a href="#">Triumph</a></li>
+						<li><a href="#">Honda</a></li>
+						<li><a href="#">Kawasaki</a></li>
+						<li><a href="#">Suzuki</a></li>
+						<li><a href="#">Harley - Davidson</a></li>
+						<li><a href="#">Java</a></li>
+						<li><a href="#">Ural</a></li>
+					</ul>
+				</div>
+				<div class="sidebar__box sidebar__box_red">
+					<span class="sub_heading">Популярное</span>
+					<ul>
+						<li class="is-first"><a href="#">Аккумуляторы BOSCH</a></li>
+						<li><a href="#">Колеса и диски на УАЗ</a></li>
+						<li><a href="#">Обвес TAMIYA</a></li>
+						<li><a href="#">Хабы по 500 рублей</a></li>
+						<li><a href="#">Оптика на Буханку</a></li>
+						<li><a href="#">Колеса в сборе Шны и Диски, комплекты</a></li>
+						<li><a href="#">Оффроад пакет на УАЗ</a></li>
+						<li><a href="#">Свечи BOSCH</a></li>
+					</ul>
+				</div>
+				<div class="more">
+					<a href="#"><span>Все популярное</span><br><i></i></a>
+				</div>
+			</div>
+			<!-- end sidebar -->
+			<!-- begin content  -->
+			<div class="content">
+				<div class="content__box">
+					<div class="search">
+						<form action="">
+							<input type="text" class="search__keyword" value="искать по названию или номеру детали" onfocus="if (this.value=='искать по названию или номеру детали') this.value='';" onblur="if (this.value==''){this.value='искать по названию или номеру детали'}">
+							<input type="submit" value=" " class="search__submit">
+						</form>
+					</div>
+					<div class="head">
+						<h1>Каталог запчастей</h1>
+						<span class="small">по маркам автомобилей</span>
+					</div>
+					<div class="brands">
+						<div>
+							<a href="#" class="brand"><img src="img/brand/chery.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#" class="brand"><img src="img/brand/lifan.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#" class="brand"><img src="img/brand/byd.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#" class="brand"><img src="img/brand/geely.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="content__box">
+					<div class="head">
+						<span class="heading">Каталог запчастей</span>
+					</div>
+					<div class="spares">
+						<ul>
+							<li><a href="#" class="spares__battery"><span class="spares__img"><i></i></span><span class="spares__title">Аккумуляторы</span></a></li>
+							<li><a href="#" class="spares__transmission"><span class="spares__img"><i></i></span><span class="spares__title">Трансмиссия</span></a></li>
+							<li><a href="#" class="spares__tools"><span class="spares__img"><i></i></span><span class="spares__title">Инструменты</span></a></li>
+							<li><a href="#" class="spares__disc"><span class="spares__img"><i></i></span><span class="spares__title">Диски / шины</span></a></li>
+							<li><a href="#" class="spares__suspension"><span class="spares__img"><i></i></span><span class="spares__title">Подвеска</span></a></li>
+							<li><a href="#" class="spares__silencer"><span class="spares__img"><i></i></span><span class="spares__title">Глушители</span></a></li>
+							<li><a href="#" class="spares__candle"><span class="spares__img"><i></i></span><span class="spares__title">Свечи</span></a></li>
+							<li><a href="#" class="spares__motor"><span class="spares__img"><i></i></span><span class="spares__title">Двигатель</span></a></li>
+							<li><a href="#" class="spares__oils"><span class="spares__img"><i></i></span><span class="spares__title">Масла</span></a></li>
+							<li><a href="#" class="spares__brake"><span class="spares__img"><i></i></span><span class="spares__title">Тормоза</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="news-wrapper">
+					<div class="news">
+						<h2>Специальные предложения</h2>
+						<div class="news__img">
+							<a href="#"><img src="img/special-img.png" alt=""></a>
+						</div>
+						<div class="news__title is-first">
+							<a href="#">Запчасти на УАЗ в сборе - Теперь из поднебесной!</a>
+							<p>Возможность приобрести запчасти без скидки на 20 апреля при заказе на Январский новый год без участия посредников. Заказывайте через наш интернет магазин и получите скидку!</p>
+						</div>
+						<div class="news__title">
+							<a href="#">Всем покупателям скидки в ноябре 2014</a>
+						</div>
+						<div class="news__title">
+							<a href="#">Подарки от фирм - производителей можно забрать в нашем офисе</a>
+						</div>
+						<div class="more">
+							<a href="#"><span>Все специальные предложения</span><br><i></i></a>
+						</div>
+					</div>
+					<div class="news">
+						<h2>Последние новости</h2>
+						<div class="news__img">
+							<a href="#"><img src="img/last-news-img.png" alt=""></a>
+						</div>
+						<div class="news__title is-first">
+							<a href="#">Обвес для бездорожья всего за 4000 рублей</a>
+							<p>Возможность приобрести запчасти без скидки на 20 апреля при заказе на Январский новый год без участия посредников. Заказывайте через наш интернет магазин и получите скидку!</p>
+							<span class="date">22.09.14</span>
+						</div>
+						<div class="news__title">
+							<a href="#">Всем покупателям скидки в ноябре 2014</a>
+						</div>
+						<div class="news__title">
+							<a href="#">Подарки от фирм - производителей можно забрать в нашем офисе</a>
+						</div>
+						<div class="more">
+							<a href="#"><span>Все новости</span><br><i></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end main -->
+	<!-- begin footer  -->
+	<div class="footer">
+		<!-- begin footer__top  -->
+		<div class="footer__top">
+			<span class="heading">Master auto parts</span>
+			<p>На заводе Derways в Черкесске началось производство автомобилей Chery. В октябре с конвейера сойдет до 2400 автомобилей, большая часть из которых - кроссоверы Tiggo 5, остальные - седаны Bonus 3. Проектная мощность завода – 3000 автомобилей в месяц. </p>
+			<p>На заводе в Черкесске планируется довести уровень локализации производства до 50%, а также открыть совместный инженерный центр. Уже сейчас запущена линия по сварке кузовов.</p>
+			<p>Chery Bonus 3(A19) и Chery Tiggo 5(T21) входят в линейку Ambition Line, недавно представленную в России на Московском Автосалоне. На новые модели действует гарантия 5 лет или 150 тыс. км пробега.</p>
+			<p>Chery Tiggo 5 сейчас продается по цене от 650 до 770 тысяч рублей, а Bonus 3 - от 420 до 470 тысяч рублей. </p>
+		</div>
+		<!-- end footer__top -->
+		<div class="footer__row">
+			<ul class="footer__nav">
+				<li><a href="#" class="is-active">Главная</a></li>
+				<li><a href="#">Каталог запчастей</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li><a href="#">Контакт</a></li>
+			</ul>
+			<div class="footer__box">
+				<span class="footer__title">Высоковольтный проезд, д. 11</span>
+				<span>Пн. - Пт. 9:00 - 16:00</span>
+				<span>Сб. - Вс. 10:00 - 15:00</span>
+			</div>
+			<div class="footer__box">
+				<span class="footer__title">Телефоны в Москве:</span>
+				<span>+7 (495) 767-8899</span>
+				<span>+7 (926) 283-1823</span>
+			</div>
+		</div>
+		<!-- begin footer__bottom  -->
+		<div class="footer__bottom">
+			<div class="copyright">
+				<p>Copyright (c) 2014 Master Auto Parts. Разработка сайта ADV Creative</p>
+			</div>
+		</div>
+		<!-- end footer__bottom -->
+	</div>
+	<!-- end footer -->
 </div>
 <!-- END out-->
 <!-- load scripts -->
-<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/cycle.js"></script>
+<script type="text/javascript" src="js/lib/cycle.carousel.js"></script>
+<script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/lib/jScrollPane.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/lib/head.js"></script>
 </body>
 </html>
